@@ -16,15 +16,16 @@ export default function Upcoming() {
                         className="mb-4 flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-200 dark:border-orange-800/30 bg-orange-50 dark:bg-orange-900/10 text-[#FF6600] text-xs font-bold uppercase tracking-[0.2em]"
                     >
                         <Sparkles size={14} />
-                        <span>Don't Miss Out</span>
+                        <span>Don&apos;t Miss Out</span>
                     </motion.div>
-                    
+
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4">
-                        Upcoming <span className="text-[#6A0DAD]">Programs</span>
+                        Upcoming{" "}
+                        <span className="text-[#6A0DAD]">Programs</span>
                     </h2>
                     <p className="text-slate-500 dark:text-gray-400 max-w-2xl">
-                        Our calendar is packed with opportunities to grow and serve. 
-                        Stay tuned for registration details.
+                        Our calendar is packed with opportunities to grow and
+                        serve. Stay tuned for registration details.
                     </p>
                 </div>
             </div>
@@ -41,11 +42,11 @@ export default function Upcoming() {
                         x: {
                             repeat: Infinity,
                             repeatType: "loop",
-                            duration: 35,
+                            duration: 50,
                             ease: "linear",
                         },
                     }}
-                    whileHover={{ transition: { duration: 100 } }} 
+                    whileHover={{ transition: { duration: 100 } }}
                 >
                     {duplicatedEvents.map((event, index) => (
                         <div
@@ -53,7 +54,6 @@ export default function Upcoming() {
                             className="inline-block w-[320px] md:w-[450px] flex-shrink-0"
                         >
                             <div className="group relative bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-white/10 p-10 rounded-[2.5rem] transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(106,13,173,0.15)] hover:-translate-y-2">
-                                
                                 {/* Background Glow on Hover */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-[2.5rem]" />
 
@@ -70,7 +70,7 @@ export default function Upcoming() {
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4 whitespace-normal tracking-tight">
                                         {event.title}
                                     </h3>
-                                    
+
                                     <p className="text-slate-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed whitespace-normal mb-8 min-h-[80px]">
                                         {event.desc}
                                     </p>
@@ -86,8 +86,12 @@ export default function Upcoming() {
                                         </div>
 
                                         {/* REMINDER BUTTON */}
-                                        <button 
-                                            onClick={() => alert(`We'll notify you about ${event.title}!`)}
+                                        <button
+                                            onClick={() =>
+                                                alert(
+                                                    `We'll notify you about ${event.title}!`,
+                                                )
+                                            }
                                             className="flex items-center gap-2 bg-[#6A0DAD] hover:bg-[#520a85] text-white px-5 py-2.5 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-lg shadow-purple-500/20"
                                         >
                                             <Bell size={14} />
@@ -105,12 +109,40 @@ export default function Upcoming() {
 }
 
 const upcomingEvents = [
-    { title: "TNT Training", desc: "Equipping leaders with explosive spiritual growth and leadership tools." },
-    { title: "Manuscript Program", desc: "Deep-dive inductive study exploring the original context of scripture." },
-    { title: "Hermeneutics Program", desc: "Mastering the art and science of biblical interpretation." },
-    { title: "Bible Reading Challenge", desc: "A community-wide journey through the Word of God together." },
-    { title: "Freshers Welcome", desc: "Welcoming new students into our spiritual family with open arms." },
-    { title: "GC Goodbye", desc: "Celebrating our graduates as they transition to their next calling." },
-    { title: "Outreach Mission", desc: "Spreading the message of hope and love to our local community." },
-    { title: "Panel Discussion", desc: "Engaging difficult questions with biblical wisdom and community clarity." },
+    {
+        title: "TNT Training",
+        desc: "Equipping leaders with explosive spiritual growth and leadership tools.",
+    },
+    {
+        title: "Manuscript Program",
+        desc: "Deep-dive inductive study exploring the original context of scripture.",
+    },
+    {
+        title: "Hermeneutics Program",
+        desc: "Mastering the art and science of biblical interpretation.",
+    },
+    {
+        title: "Bible Reading Challenge",
+        desc: "A community-wide journey through the Word of God together.",
+    },
+    {
+        title: "Freshers Welcome",
+        desc: "Welcoming new students into our spiritual family with open arms.",
+    },
+    {
+        title: "GC Goodbye",
+        desc: "Celebrating our graduates as they transition to their next calling.",
+    },
+    {
+        title: "Outreach Mission",
+        desc: "Spreading the message of hope and love to our local community.",
+    },
+    {
+        title: "Panel Discussion",
+        desc: "Engaging difficult questions with biblical wisdom and community clarity.",
+    },
+    {
+        title: "Summer Bible Study",
+        desc: "An intensive summer program exploring key themes in scripture.",
+    },
 ];
