@@ -1,13 +1,12 @@
-import ClientSuccessStories from "@/sections/ClientSuccessStories";
 import CtaBanner from "@/sections/CtaBanner";
 import CtaSection from "@/sections/CtaSection";
 import EyohaGuarantee from "@/sections/EyohaGuarantee";
-import EyohaGuaranteenew from "@/sections/EyohaGuaranteenew";
-import FeaturesSection from "@/sections/FeaturesSection";
+
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 
 import ServicesSection from "@/sections/Services";
+import Testimonials from "@/sections/Testimonials";
 import Upcoming from "@/sections/Upcoming";
 
 export default function Home() {
@@ -18,12 +17,10 @@ export default function Home() {
             <ServicesSection />
             <CtaBanner />
             <Upcoming />
-            <EyohaGuarantee />
 
             <CtaSection />
-            <EyohaGuaranteenew />
-            {/* <ExcellenceSection /> */}
-            <FeaturesSection />
+            <Testimonials />
+
             <Footer />
         </div>
     );
