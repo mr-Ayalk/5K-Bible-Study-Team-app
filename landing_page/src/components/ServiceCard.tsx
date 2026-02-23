@@ -21,22 +21,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     iconBgClass,
     thumbnailImage,
 }) => {
-    // const isImageObject =
-    //     typeof icon === "object" && icon !== null && "src" in icon;
-    // Check if it's an object with a src property (StaticImageData)
     const isImageObject =
         typeof icon === "object" && icon !== null && "src" in icon;
 
-    // Check if it's a short string (for the circle text)
     const isShortString = typeof icon === "string" && icon.length <= 3;
+
     return (
-        <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 overflow-hidden">
-            <div className="h-48 md:h-56 bg-gray-100 overflow-hidden relative">
+        // Added dark:bg-slate-900, dark:border-white/10, and transition-all
+        <div className="bg-white dark:bg-slate-900/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-white/10 overflow-hidden group">
+            <div className="h-48 md:h-56 bg-gray-100 dark:bg-gray-800 overflow-hidden relative">
                 <Image
                     src={thumbnailImage}
                     alt={`Thumbnail for ${title} service`}
                     layout="fill"
                     objectFit="cover"
+                    // Added a subtle scale effect on hover for extra "Amazing" factor
+                    className="group-hover:scale-110 transition-transform duration-500"
                 />
             </div>
 
@@ -47,11 +47,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                     >
                         {isImageObject ? (
                             <Image
-                                src={icon as StaticImageData} // Type assertion for safety
+                                src={icon as StaticImageData}
                                 alt={`${title} icon`}
                                 width={16}
                                 height={16}
                                 style={{ objectFit: "contain" }}
+                                // Ensure white icons show up well on both themes
+                                className="brightness-0 invert"
                             />
                         ) : isShortString ? (
                             <span className="text-[10px] uppercase font-extrabold">
@@ -61,18 +63,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                             icon
                         )}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 leading-snug">
+                    {/* Added dark:text-white */}
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white leading-snug">
                         {title}
                     </h3>
                 </div>
 
-                <p className="text-gray-600 mb-6 text-sm line-clamp-4">
+                {/* Added dark:text-gray-400 */}
+                <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm line-clamp-4 leading-relaxed">
                     {description}
                 </p>
 
+                {/* Added dark:text-purple-400 and dark:hover:text-purple-300 */}
                 <Link
                     href={linkUrl}
-                    className="text-purple-600 hover:text-purple-700 font-medium text-sm transition duration-150 inline-flex items-center"
+                    className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-bold text-sm transition duration-150 inline-flex items-center group/link"
                 >
                     {linkText}
                 </Link>
