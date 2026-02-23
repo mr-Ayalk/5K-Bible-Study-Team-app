@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
 
                     {/* Navigation */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 text-orange-400 uppercase tracking-widest text-sm">
+                        <h4 className="text-lg font-bold mb-6 text-orange-400 uppercase tracking-widest ">
                             Quick Navigation
                         </h4>
                         <ul className="space-y-4">
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
 
                     {/* Study Groups */}
                     <div>
-                        <h4 className="text-lg font-bold mb-6 text-orange-400 uppercase tracking-widest text-sm">
+                        <h4 className="text-lg font-bold mb-6 text-orange-400 uppercase tracking-widest ">
                             Our Programs
                         </h4>
                         <ul className="space-y-4">

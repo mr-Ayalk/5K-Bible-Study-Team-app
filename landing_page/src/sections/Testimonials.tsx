@@ -76,7 +76,7 @@ const Testimonials: React.FC = () => {
                                 </div>
 
                                 <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6 line-clamp-6 font-medium italic">
-                                    "{item.text}"
+                                    `{item.text}`
                                 </p>
 
                                 <div className="mt-auto">

@@ -80,7 +80,7 @@ const MaterialsSection: React.FC = () => {
                         Study <span className="text-[#6A0DAD]">Materials</span>
                     </h2>
                     <p className="text-gray-500 dark:text-gray-400 max-w-2xl font-medium">
-                        "ሕይወት ለዋጩ ፤ የእግዚአብሔር ቃል ይጠና" — Access our latest study
+                        `ሕይወት ለዋጩ ፤ የእግዚአብሔር ቃል ይጠና` — Access our latest study
                         guides and articles.
                     </p>
                 </div>
