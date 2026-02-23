@@ -11,8 +11,8 @@ const inter = Inter({
 
 // app/layout.tsx
 export const metadata: Metadata = {
-    title: "Eyoha Digitals - Elevate Your Brand with Expert Digital Marketing",
-    description: "Expert digital marketing services for your brand.",
+    title: ` 5K Bible Study - Empowering Your Faith Journey`,
+    description: "ሕይወት ለዋጩ ፤ የእግዚአብሔር ቃል ይጠና ፤ በታማኝነትም ይታወጅ !",
     icons: {
         icon: "/eyohalogo.png", // Standard favicon
         shortcut: "/eyohalogo.png", // Alternative for older browsers
@@ -37,24 +37,32 @@ export const metadata: Metadata = {
 //     );
 // }
 // app/layout.tsx
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" suppressHydrationWarning> 
-      {/* suppressHydrationWarning is needed because the theme script changes attributes */}
-      <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <html lang="en" suppressHydrationWarning>
+            {/* suppressHydrationWarning is needed because the theme script changes attributes */}
+            <head>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
             if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
               document.documentElement.classList.add('dark')
             } else {
               document.documentElement.classList.remove('dark')
             }
           `,
-        }} />
-      </head>
-      <body className={`${inter.variable} font-sans antialiased bg-white dark:bg-black text-slate-900 dark:text-slate-100`}>
-        {children}
-      </body>
-    </html>
-  );
+                    }}
+                />
+            </head>
+            <body
+                className={`${inter.variable} font-sans antialiased bg-white dark:bg-black text-slate-900 dark:text-slate-100`}
+            >
+                {children}
+            </body>
+        </html>
+    );
 }

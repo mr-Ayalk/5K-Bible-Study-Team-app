@@ -3,6 +3,7 @@
 import Footer from "@/sections/Footer";
 import MaterialsSection from "@/sections/MaterialsSection";
 import Navbar from "@/sections/Navbar";
+import ScriptureMaterial from "@/sections/ScriptureMaterial";
 import React, { useEffect, useState } from "react";
 
 const Page = () => {
@@ -37,6 +38,7 @@ const Page = () => {
             <Navbar theme={theme} setTheme={toggleTheme} />
             <main className=" py-20">
                 <MaterialsSection />
+                <ScriptureMaterial />
             </main>
             <Footer />
         </div>

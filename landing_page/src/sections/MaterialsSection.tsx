@@ -21,13 +21,12 @@ const mainArticle = {
 
 const otherResources = [
     {
-        title: "Understanding Spiritual Gifts",
-        description:
-            "A comprehensive guide to identifying and exercising the gifts of the Spirit.",
+        title: "Psalms of Asaph",
+        description: "A comprehensive guide to Psalms of Asaph",
         date: "Jan 12, 2026",
-        fileUrl: "/materials/spiritual-gifts.pptx",
-        fileName: "Spiritual_Gifts_5K.pptx",
-        isPPT: true,
+        fileUrl: "/materials/psalms_of_asaph.pdf",
+        fileName: "psalms_of_asaph.pdf",
+        isPPT: false,
     },
     {
         title: "Foundations of Discipleship",
