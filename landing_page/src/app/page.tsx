@@ -1,5 +1,3 @@
-// import FeaturedClients from "@/components/FeaturedClients";
-import AboutUs from "@/sections/AboutUs";
 import ClientSuccessStories from "@/sections/ClientSuccessStories";
 import CtaBanner from "@/sections/CtaBanner";
 import CtaSection from "@/sections/CtaSection";
@@ -14,6 +12,7 @@ import PricingSection from "@/sections/Packages";
 // import RecentWinsSection from "@/sections/RecentWins";
 import RecentWins from "@/sections/RecentWins";
 import ServicesSection from "@/sections/Services";
+import Upcoming from "@/sections/Upcoming";
 // import OurServices from "@/sections/Services";
 
 export default function Home() {
@@ -23,6 +22,7 @@ export default function Home() {
 
             <ServicesSection />
             <CtaBanner />
+            <Upcoming />
             <RecentWins />
 
             <ClientSuccessStories />

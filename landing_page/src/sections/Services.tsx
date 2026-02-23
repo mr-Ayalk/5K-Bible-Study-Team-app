@@ -48,7 +48,7 @@ const serviceData = [
         icon: tagIcon,
         title: "Special Programs",
         description:
-            "We will have a special program every semester where we will have a gratudates good bye program and freshers welcome program and we will have a special program for our students who are in their final year and it happenes every semester one time .",
+            "We will have a special program every semester where we will have a dinner night, gratudates good bye program and freshers welcome program and we will have a special program for our students who are in their final year and it happenes every semester one time .",
         linkText: "Learn More →",
         linkUrl: "#",
         iconBgClass: "bg-red-500",
