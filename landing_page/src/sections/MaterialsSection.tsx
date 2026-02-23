@@ -22,10 +22,20 @@ const mainArticle = {
 const otherResources = [
     {
         title: "Psalms of Asaph",
-        description: "A comprehensive guide to Psalms of Asaph",
+        description:
+            "A comprehensive study guide on the Psalms attributed to Asaph, exploring their themes of worship, justice, and God's sovereignty.",
         date: "Jan 12, 2026",
         fileUrl: "/materials/psalms_of_asaph.pdf",
         fileName: "psalms_of_asaph.pdf",
+        isPPT: false,
+    },
+    {
+        title: "IBS Guide for 5K Bible Study",
+        description:
+            "A practical manual for students to effectively engage with the Inductive Bible Study method in our 5K community.",
+        date: "Nov 18, 2025",
+        fileUrl: "/materials/ibs_guide_5k.pdf",
+        fileName: "IBS_GUIDE_5K.pdf",
         isPPT: false,
     },
     {
@@ -35,15 +45,6 @@ const otherResources = [
         date: "Dec 05, 2025",
         fileUrl: "/materials/discipleship.pdf",
         fileName: "Discipleship_Foundations.pdf",
-        isPPT: false,
-    },
-    {
-        title: "Spiritual Growth Principles",
-        description:
-            "Strategies for consistent maturity in your spiritual journey.",
-        date: "Nov 18, 2025",
-        fileUrl: "/materials/growth.pdf",
-        fileName: "Spiritual_Growth_5K.pdf",
         isPPT: false,
     },
 ];
