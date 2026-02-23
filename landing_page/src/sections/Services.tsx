@@ -12,6 +12,7 @@ import seoIcon from "../assets/images/seoIcon.png";
 import tagIcon from "../assets/images/tagIcon.png";
 import paletteIcon from "../assets/images/paletteIcon.png";
 import codeIcon from "../assets/images/codeIcon.png";
+import Tag from "@/components/Tag";
 
 const serviceData = [
     {
@@ -83,9 +84,9 @@ const ServicesSection: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12 md:mb-16">
                     {/* Purple text remains consistent, or can be lightened for dark mode */}
-                    <p className="text-sm font-medium text-purple-600 dark:text-purple-400 uppercase tracking-widest mb-1">
-                        What We Offer
-                    </p>
+
+                    <Tag>How We Grow</Tag>
+
                     {/* Added dark:text-white */}
                     <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
                         Our{" "}

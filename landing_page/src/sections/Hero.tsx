@@ -61,9 +61,8 @@ export default function Hero() {
                     transition={{ delay: 0.3, duration: 0.8 }}
                     className="text-slate-600 dark:text-gray-400 text-lg md:text-xl font-normal mb-8 max-w-[700px] leading-relaxed"
                 >
-                    We empower your faith to thrive in the modern age through
-                    tailored, scripture-driven study that delivers measurable
-                    spiritual growth.
+                    We empower your faith to thrive through tailored,
+                    scripture-driven study designed for your modern life.
                 </motion.p>
 
                 <motion.div
@@ -84,7 +83,7 @@ export default function Hero() {
 
                     <Link href="#portfolio" className="w-full sm:w-auto">
                         <button className="flex items-center justify-center space-x-3 text-slate-900 dark:text-white text-base font-bold px-10 py-5 w-full sm:w-[250px] rounded-2xl border-2 border-slate-200 dark:border-white/10 hover:bg-slate-200/50 dark:hover:bg-white/5 transition-all transition-duration-300">
-                            <span>View Our Work</span>
+                            <span>Explore Materials</span>
                             <Image
                                 src={arrowatangle}
                                 alt="Arrow"
