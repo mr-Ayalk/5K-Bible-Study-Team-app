@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Quote } from "lucide-react";
 import { motion } from "framer-motion";
 import logoImage from "../assets/images/bible_logo.png";
+import Tag from "@/components/Tag";
 const testimonies = [
     {
         name: "Abenezer K.",
@@ -26,7 +27,7 @@ const testimonies = [
     {
         name: "Hanna G.",
         role: "Bible Reading Challenge",
-         image: logoImage,
+        image: logoImage,
         text: "Consistency was my biggest challenge. Being part of this 5K community kept me accountable, and reading through the Word changed my heart.",
     },
 ];
@@ -38,8 +39,14 @@ const Testimonials: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-4">
+                        <Tag className="bg-gradient-to-r from-[#6A0DAD] to-orange-400 text-white border-none">
+                            Testimonials
+                        </Tag>
+                    </h2>
+                    <h2 className="text-3xl md:text-6xl font-black mt-6 text-center max-w-2xl mx-auto text-gray-900 dark:text-white leading-tight">
                         Changed <span className="text-[#6A0DAD]">Lives</span>
                     </h2>
+
                     <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto italic font-medium">
                         ` ሕይወት ለዋጩ ፤ የእግዚአብሔር ቃል ይጠና ፤ በታማኝነትም ይታወጅ !`
                     </p>

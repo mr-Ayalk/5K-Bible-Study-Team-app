@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, Sparkles, Bell } from "lucide-react";
+import Tag from "@/components/Tag";
 
 export default function Upcoming() {
     const duplicatedEvents = [...upcomingEvents, ...upcomingEvents];
@@ -15,8 +16,11 @@ export default function Upcoming() {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="mb-4 flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-200 dark:border-orange-800/30 bg-orange-50 dark:bg-orange-900/10 text-[#FF6600] text-xs font-bold uppercase tracking-[0.2em]"
                     >
-                        <Sparkles size={14} />
-                        <span>Don&apos;t Miss Out</span>
+                        <Tag>
+                            {" "}
+                            <Sparkles size={14} />
+                            <span>Don&apos;t Miss Out</span>
+                        </Tag>
                     </motion.div>
 
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-4">

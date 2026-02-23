@@ -1,6 +1,6 @@
 import CtaBanner from "@/sections/CtaBanner";
 import CtaSection from "@/sections/CtaSection";
-import EyohaGuarantee from "@/sections/EyohaGuarantee";
+import Faqs from "@/sections/Faqs";
 
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
@@ -20,7 +20,7 @@ export default function Home() {
 
             <CtaSection />
             <Testimonials />
-
+            <Faqs />
             <Footer />
         </div>
     );
