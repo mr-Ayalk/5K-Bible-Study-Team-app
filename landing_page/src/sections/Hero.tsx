@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import arrowatangle from "../assets/images/arrowatangle.png";
 // Ensure this path matches your file structure for the Bible Study logo
-import bibleLogo from "../assets/images/bible_logo.png";
+import bibleLogo from "../assets/images/bs_banner.png";
 
 export default function Hero() {
     const [theme, setTheme] = useState("light");
@@ -48,7 +48,7 @@ export default function Hero() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl sm:text-7xl md:text-8xl lg:text-[100px] font-extrabold font-poppins tracking-tight text-slate-900 dark:text-white"
+                        className="text-5xl sm:text-7xl md:text-8xl  font-extrabold font-poppins tracking-tight text-slate-900 dark:text-white"
                     >
                         Rooted. Growing. <br />
                         <span className="text-[#FF6600]">Together.</span>
@@ -81,7 +81,7 @@ export default function Hero() {
                         </button>
                     </Link>
 
-                    <Link href="#portfolio" className="w-full sm:w-auto">
+                    <Link href="/Materials" className="w-full sm:w-auto">
                         <button className="flex items-center justify-center space-x-3 text-slate-900 dark:text-white text-base font-bold px-10 py-5 w-full sm:w-[250px] rounded-2xl border-2 border-slate-200 dark:border-white/10 hover:bg-slate-200/50 dark:hover:bg-white/5 transition-all transition-duration-300">
                             <span>Explore Materials</span>
                             <Image
@@ -113,7 +113,7 @@ export default function Hero() {
 
                 {/* 3. THE FLOATING LOGO BADGE (Stays in its fixed position) ..*/}
                 <motion.div
-                    className="absolute top-1/2 right-12 hidden xl:block -translate-y-1/2"
+                    className="absolute top-1/3 right-7 hidden xl:block -translate-y-1/2"
                     initial={{ scale: 0, rotate: -45 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{
@@ -139,8 +139,8 @@ export default function Hero() {
                                 <Image
                                     src={bibleLogo}
                                     alt="Bible Study Logo"
-                                    width={180}
-                                    height={180}
+                                    width={300}
+                                    height={220}
                                     className="mb-2 rounded-full"
                                 />
                                 <span className="text-[10px] font-black uppercase tracking-tighter text-[#FF6600]">
